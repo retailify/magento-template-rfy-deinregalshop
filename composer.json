@@ -1,13 +1,13 @@
 {
-  "name": "meetsecommerce/magento-template-basic",
+  "name": "retailify/magento-template-deinregalshop",
   "type": "magento-module",
-  "description": "Basic meets-ecommerce template",
+  "description": "Deinregal.shop Template",
   "minimum-stability": "dev",
-  "homepage": "https://meets-ecommerce.de",
+  "homepage": "https://retailify.de",
   "authors": [
     {
-      "name": "meets-ecommerce.de",
-      "email": "support@meets-ecommerce.de"
+      "name": "Thomas Meitz",
+      "email": "support@retailify.de"
     }
   ]
 }
