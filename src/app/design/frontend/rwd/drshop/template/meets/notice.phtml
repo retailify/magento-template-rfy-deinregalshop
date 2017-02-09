@@ -1,0 +1,38 @@
+<?php
+/**
+ * meetsecommerce/magento-core
+ *
+ * This source file is property of meets-ecommerce GmbH and it is NOT ALLOWED
+ * to use it for other external projects or open source projects.
+ *
+ * @category    Meets
+ * @package     Meets_Frontend_Default_Default_Layout
+ * @copyright   Copyright (c) 2015 meets-ecommerce GmbH (http://meets-ecommerce.de)
+ * @author      Daniel Matuschewsky <dm@meets-ecommerce.de>
+ */
+?>
+<?php /** @var $this Meets_Core_Block_Notice  */ ?>
+<?php $block = $this->getLayout()->createBlock('meets/notice'); ?>
+<?php if($block->showNotice()): ?>
+<div class="meets-notice <?php echo $block->getCssClass(); ?>">
+    <div class="notice-inner"><p>123 <?php echo $this->__($block->getText(), strtoupper($block->getEnvironment())) ?></p></div>
+</div>
+<?php endif; ?>
+
+<?php if ($this->displayNoscriptNotice()): ?>
+    <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong><?php echo $this->__('JavaScript seems to be disabled in your browser.'); ?></strong><br />
+                    <?php echo $this->__('You must have JavaScript enabled in your browser to utilize the functionality of this website.'); ?>
+                </p>
+            </div>
+        </div>
+    </noscript>
+<?php endif; ?>
+<?php if ($this->displayDemoNotice()): ?>
+    <div class="global-site-notice demo-notice">
+        <div class="notice-inner"><p><?php echo $this->__('This is a demo store. Any orders placed through this store will not be honored or fulfilled.') ?></p></div>
+    </div>
+<?php endif; ?>

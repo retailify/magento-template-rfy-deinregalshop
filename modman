@@ -1,2 +1,2 @@
-src/app/design/frontend/default/drshop/*             app/design/frontend/default/drshop/
-src/skin/frontend/default/drshop/*                   skin/frontend/default/drshop/
+src/app/design/frontend/rwd/drshop/*             app/design/frontend/rwd/drshop/
+src/skin/frontend/rwd/drshop/*                   skin/frontend/rwd/drshop/
