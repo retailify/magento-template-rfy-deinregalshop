@@ -1,0 +1,13 @@
+{
+  "name": "meetsecommerce/magento-template-basic",
+  "type": "magento-module",
+  "description": "Basic meets-ecommerce template",
+  "minimum-stability": "dev",
+  "homepage": "https://meets-ecommerce.de",
+  "authors": [
+    {
+      "name": "meets-ecommerce.de",
+      "email": "support@meets-ecommerce.de"
+    }
+  ]
+}
