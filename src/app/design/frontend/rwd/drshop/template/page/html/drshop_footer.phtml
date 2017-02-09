@@ -1,0 +1,17 @@
+<div class="footer-container">
+    <div class="footer">
+        <div class="links">
+            <h4 class="title">DeinRegal Service</h4>
+            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('drshop_footer_service')->toHtml() ?>
+        </div>
+        <div class="links">
+            <h4 class="title">Zahlungsarten</h4>
+            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('drshop_footer_payment')->toHtml() ?>
+        </div>
+        <div class="links">
+            <h4 class="title">Informationen</h4>
+            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('drshop_footer_customer')->toHtml() ?>
+        </div>
+        <address class="copyright"><?php echo $this->getCopyright() ?></address>
+    </div>
+</div>
