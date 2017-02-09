@@ -1,0 +1,14 @@
+body, button, input, select, table, textarea {
+    font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+}
+
+.cms-page-view .std p,
+.cms-no-route .std p {
+  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-style: normal;
+}
+
+.cms-page-view .std li, .cms-no-route .std li {
+    font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+    font-style: normal;
+}
