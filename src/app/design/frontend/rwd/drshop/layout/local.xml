@@ -31,22 +31,22 @@
 Default layout, loads most of the pages
 -->
     <default>
+        <remove name="right.reports.product.compared" />
+        <remove name="catalog.compare.sidebar" />
         <!-- Mage_Poll -->
         <reference name="right">
             <remove name="right.poll" />
         </reference>
-				
-				<reference name="root">
-					<block type="page/html_footer" name="footer" as="footer" template="page/html/drshop_footer.phtml">
-					</block>
-				</reference>
-				<reference name="head">
-					<!-- Add stylesheets with no media queries for use in IE 8 and below -->
-					    <action method="addItem"><type>skin_css</type><name>css/drshop.css</name><params/><if><![CDATA[ (lte IE 8) & (!IEMobile)]]></if></action>
-					    <!-- Add stylesheets with media queries for use by modern browsers -->
-					    <action method="addItem"><type>skin_css</type><name>css/drshop.css</name><params/><if><![CDATA[<!--[if (gte IE 9) | (IEMobile)]><!-->]]></if></action>
-				</reference>
-				
+
+        <reference name="root">
+            <block type="page/html_footer" name="footer" as="footer" template="page/html/drshop_footer.phtml">
+            </block>
+        </reference>
+        <reference name="head">
+            <!-- Add stylesheets with no media queries for use in IE 8 and below -->
+            <action method="addItem"><type>skin_css</type><name>css/drshop.css</name><params/><if><![CDATA[ (lte IE 8) & (!IEMobile)]]></if></action>
+            <!-- Add stylesheets with media queries for use by modern browsers -->
+            <action method="addItem"><type>skin_css</type><name>css/drshop.css</name><params/><if><![CDATA[<!--[if (gte IE 9) | (IEMobile)]><!-->]]></if></action>
+        </reference>
     </default>
-		
 </layout>
