@@ -31,12 +31,21 @@
 Default layout, loads most of the pages
 -->
     <default>
-        <remove name="right.reports.product.compared" />
-        <remove name="catalog.compare.sidebar" />
-        <!-- Mage_Poll -->
+        
         <reference name="right">
+            <!-- Mage_Poll -->
             <remove name="right.poll" />
+            <!-- Product Compare -->
+            <remove name="right.reports.product.compared" />
+            <remove name="catalog.compare.sidebar" />
         </reference>
+        
+        <customer_account>
+            <reference name="left">
+                <!-- Product Compare -->
+                <remove name="catalog.compare.sidebar" />
+            </reference>
+        </customer_account>
 
         <reference name="root">
             <block type="page/html_footer" name="footer" as="footer" template="page/html/drshop_footer.phtml">
